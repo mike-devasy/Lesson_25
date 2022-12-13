@@ -1,0 +1,80 @@
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #424551;
+	background-color: #333;
+	color: #fff;
+	/* font-size: 16px; */
+	font-size: 0.875rem; /* 14px, якщо за замовченням 16px */
+}
+ 
+.wrapper{
+	min-height: 100%;
+	overflow: clip;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.header {
+	margin-bottom: 50px;
+	padding: 40px;
+}
+h1{
+text-align: center;
+font-size: 65px;
+font-weight: 700;
+letter-spacing: 10px;
+}
+.page {}
+.page__container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.page__block {}
+h2{
+	font-size: 45px;
+	text-align: center;
+	color: rgba(255, 255, 0, 0.614);
+	margin-bottom: 30px;
+}
+.page__form {}
+
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 200px;
+}
+.form__line {
+	display: none;
+}
+
+.form._active .form__line{
+	display: block;
+}
+
+
+.form__input {
+	font-size: 30px;
+	padding: 8px 20px;
+	margin-bottom: 8px;
+	border-radius: 20px;
+	background-color: rgba(22, 22, 174, 0.63);
+}
+
+.form__label {
+	font-size: 20px;
+}
+
+.form__image {
+	transform: scale(1);
+	transition: all 0.5s ease  ;
+}
+.form__image:hover{
+	transform: scale(1.5);
+}
+.footer {}
